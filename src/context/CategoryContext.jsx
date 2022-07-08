@@ -8,8 +8,8 @@ export const CategoryContext = createContext();
 // create a new provider
 const CategoryProvider = ({ children }) => {
 
-  //const url1 = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
-  const url = import.meta.env.VITE_API_URL1
+  const url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list'
+  //const url = import.meta.env.VITE_API_URL1
 
   const { data, error, loading } = useFetch(url)
   const { drinks } = data
